@@ -11,10 +11,19 @@ input()
 
 start  = time.time()
 q = random.choice(w)
+
+word = ''
 while n <=5:
     print("*문제",n)
     print(q)
 
+
+
+    if q == word:
+        print("중복!,word")
+        q = random.choice(w)
+        continue
+    word = q
     x = input()
 
     if q ==x:
